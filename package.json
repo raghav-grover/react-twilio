@@ -21,8 +21,8 @@
     "build": "webpack"
   },
   "author": {
-    "name": "Your name",
-    "email": "your email"
+    "name": "Raghav Grover",
+    "email": "raghavgrover43@gmail.com"
   },
   "repository": {
     "type": "git",
