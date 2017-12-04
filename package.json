@@ -1,7 +1,7 @@
 {
   "name": "react-twilio",
   "version": "0.0.1",
-  "description": "Put a description here",
+  "description": "React twilio is a react powered mult-participant Twilio Component, having controls to mute, disable camera and disconnect.",
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^15.5.4",
@@ -30,6 +30,8 @@
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.5.1"
+    "babel-preset-env": "^1.5.1",
+    "file-loader": "^1.1.5",
+    "url-loader": "^0.6.2"
   }
 }

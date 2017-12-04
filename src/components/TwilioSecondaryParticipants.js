@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import TwilioVideo from './TwilioVideo';
-let absoluteUrl = 'http://localhost:3001/';
-let url = absoluteUrl + 'images/';
-let closeIcon = url + 'error.png';
+let closeIcon = require('../images/error.png');
 
 class TwilioSecondaryParticipants extends Component {
     constructor(props) {

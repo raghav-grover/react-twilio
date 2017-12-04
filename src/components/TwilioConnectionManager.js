@@ -61,7 +61,7 @@ class TwilioConnectionManager extends Component {
     }
 
     participantConnected(participant) {
-        participant.on('trackAdded', track => this.trackAdded(track,participant));
+        participant.on('trackAdded', track => this.trackAdded(track, participant));
         participant.on('trackRemoved', track => this.trackRemoved(participant));
     }
 
@@ -110,7 +110,7 @@ class TwilioConnectionManager extends Component {
         });
     }
 
-    trackAdded(track,participant) {
+    trackAdded(track, participant) {
         track.on('enabled', () => {
             this.iterateParticipantTracks(participant);
         });
@@ -137,7 +137,7 @@ class TwilioConnectionManager extends Component {
     }
 
     reconnect() {
-        let { token } = this.props[actionTypes.getVideoAuthToken].success;
+        let { token } = this.props;
         let { roomName } = this.props;
         if (token != null) {
             this.connectToTwilio(token, roomName);
@@ -161,6 +161,16 @@ TwilioConnectionManager.propTypes = {
     roomName: propTypes.string.isRequired,
     token: propTypes.string.isRequired,
     style: propTypes.object.isRequired
+}
+
+TwilioConnectionManager.defaultProps = {
+    style: {
+        border: '1px solid #dcd9d9',
+        borderRadius: '4px',
+        marginBottom: '15px',
+        boxShadow: '5px 5px 5px #e0e3e4',
+        fontWeight: 'lighter'
+    }
 }
 
 export default TwilioConnectionManager;

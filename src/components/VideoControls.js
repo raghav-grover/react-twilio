@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
-let absoluteUrl = 'http://localhost:3001/';
-let url = absoluteUrl + 'images/';
-let mute = url + 'mute.png';
-let unmute = url + 'unmute.png';
-let camera = url + 'camera.png';
-let uncamera = url + 'uncamera.png';
-let disconnect = url + 'disconnect.png';
-let reconnectIcon = url + 'reconnect.png';
-let closeIcon = url + 'error.png';
-let showBar = url + 'showBar.png';
+let mute = require('../images/mute.png');
+let unmute = require('../images/unmute.png');
+let camera = require('../images/camera.png');
+let uncamera = require('../images/uncamera.png');
+let disconnect = require('../images/disconnect.png');
+let reconnectIcon = require('../images/reconnect.png');
+let closeIcon = require('../images/error.png');
+let showBar = require('../images/showBar.png');
 
 class VideoControls extends Component {
     constructor(props) {

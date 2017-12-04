@@ -5,7 +5,7 @@ import TwilioSecondaryParticipants from './TwilioSecondaryParticipants';
 import Draggable from './Draggable';
 import ReactLoading from 'react-loading';
 import VideoControls from './VideoControls';
-
+let reconnectIcon = require('../images/reconnect.png');
 class TwilioRemoteAndLocalHolder extends Component {
     constructor(props) {
         super(props);
