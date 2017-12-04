@@ -23,7 +23,7 @@ To connect to a room, simply pass the roomname in the props along with the Auth 
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import VideoAppointment from 'react-twilio';
+import TwilioVideo from 'react-twilio';
 
 class App extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <div style={{ heigh: '800px', width: '50%' }}>
-        <VideoAppointment roomName={'214'} token={this.token} style={{ ...this.shadowStyle, boxShadow: '5px 5px 5px #e0e3e4' }} />
+        <TwilioVideo roomName={'214'} token={this.token} style={{ ...this.shadowStyle, boxShadow: '5px 5px 5px #e0e3e4' }} />
       </div>
     );
   }
