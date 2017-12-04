@@ -24,6 +24,10 @@
     "name": "Your name",
     "email": "your email"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:raghav-grover/react-twilio.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
