@@ -5,15 +5,12 @@
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^15.5.4",
-    "react-dom": "^16.2.0"
+    "react-dom": "^15.5.4"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react": "^15.5.4",
-    "react-dom": "^16.2.0",
     "react-loading": "^1.0.2",
-    "twilio-video": "^1.6.0",
-    "webpack": "^2.6.1"
+    "twilio-video": "^1.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,6 +33,9 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1",
     "file-loader": "^1.1.5",
-    "url-loader": "^0.6.2"
+    "url-loader": "^0.6.2",
+    "webpack": "^2.6.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   }
 }
